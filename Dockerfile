@@ -1,6 +1,7 @@
-FROM n8nio/n8n
+FROM n8nio/n8n:latest
 
 ENV GENERIC_TIMEZONE=America/Santiago
+ENV N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
 EXPOSE 5678
 
-CMD ["n8n"]
+CMD ["n8n", "start"]
