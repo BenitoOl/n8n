@@ -1,0 +1,6 @@
+FROM n8nio/n8n
+
+ENV GENERIC_TIMEZONE=America/Santiago
+EXPOSE 5678
+
+CMD ["n8n"]
